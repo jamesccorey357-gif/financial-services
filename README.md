@@ -235,6 +235,30 @@ These are reference templates — they get better when you tune them to how your
 </details>
 
 <details>
+<summary><b>fund-admin</b> — reconciliation and month-end close</summary>
+
+| Skill | Command | Description |
+|---|---|---|
+| gl-recon | `/recon` | Reconcile GL to subledger and classify breaks |
+| break-trace | `/trace-break` | Trace a break to its originating entry |
+| accrual-schedule | `/accruals` | Period-end accrual schedule with draft JEs |
+| roll-forward | `/roll-forward` | Balance-sheet roll-forwards tied to GL |
+| variance-commentary | `/flux` | Flux commentary for lines over threshold |
+| nav-tieout | `/nav-tieout` | Tie an LP statement to the NAV pack |
+
+</details>
+
+<details>
+<summary><b>operations</b> — onboarding and KYC</summary>
+
+| Skill | Command | Description |
+|---|---|---|
+| kyc-doc-parse | `/kyc-parse` | Parse an onboarding packet into structured KYC fields |
+| kyc-rules | `/kyc-rules` | Risk-rate and route against the firm's rules grid |
+
+</details>
+
+<details>
 <summary><b>wealth-management</b> — advisor workflows</summary>
 
 | Skill | Command | Description |
