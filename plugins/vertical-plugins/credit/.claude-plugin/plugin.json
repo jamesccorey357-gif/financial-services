@@ -1,0 +1,8 @@
+{
+  "name": "credit",
+  "version": "0.1.0",
+  "description": "Corporate credit tools: credit analysis with leverage and coverage metrics, capital structure and recovery, covenant review, and credit memos",
+  "author": {
+    "name": "Anthropic FSI"
+  }
+}

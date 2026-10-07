@@ -41,6 +41,7 @@ Lead with what matters most for this portfolio, not a tour of every metric:
 - **Correlation.** Pairs at 0.70 or above move together; holding both adds less diversification than it looks.
 - **Screener status.** Holdings that no longer pass any screen, or carry a red flag, are worth a second look. That is a prompt to re-check the thesis, not a sell signal.
 - **Unrealized gains.** Large gains matter for any trimming decision because selling realizes them.
+- **Balance sheets.** If the `credit` plugin is installed, `credit-analysis` can check every holding's leverage and coverage in one run. Equity takes the first loss when a credit weakens.
 
 ## Caveats to state
 

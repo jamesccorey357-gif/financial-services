@@ -108,6 +108,7 @@ Start with **financial-analysis** — it carries the shared modeling skills and 
 | **[investment-banking](./plugins/vertical-plugins/investment-banking)** | CIMs, teasers, process letters, buyer lists, merger models, deal tracking. |
 | **[equity-research](./plugins/vertical-plugins/equity-research)** | Earnings notes, initiations, model updates, thesis and catalyst tracking. |
 | **[private-equity](./plugins/vertical-plugins/private-equity)** | Sourcing, screening, diligence checklists, IC memos, portfolio monitoring. |
+| **[credit](./plugins/vertical-plugins/credit)** | Issuer credit analysis, capital structure and recovery, covenant review, credit memos. |
 | **[fund-admin](./plugins/vertical-plugins/fund-admin)** | GL recon, break tracing, accruals, roll-forwards, variance commentary, NAV tie-out. |
 | **[operations](./plugins/vertical-plugins/operations)** | KYC document parsing and rules-grid evaluation. |
 | **[wealth-management](./plugins/vertical-plugins/wealth-management)** | Client reviews, financial plans, rebalancing, reporting, TLH. |
@@ -234,6 +235,18 @@ These are reference templates — they get better when you tune them to how your
 | portfolio-monitoring | `/portfolio` | Track portfolio company KPIs and variances |
 | value-creation-plan | `/value-creation` | Post-close 100-day plans and EBITDA bridges |
 | ai-readiness | `/ai-readiness` | Assess a portfolio company's AI readiness |
+
+</details>
+
+<details>
+<summary><b>credit</b> — corporate credit analysis</summary>
+
+| Skill | Command | Description |
+|---|---|---|
+| credit-analysis | `/credit` | Leverage, coverage, cash flow, liquidity, and financial-risk bands |
+| capital-structure | `/cap-structure` | Debt stack, maturity wall, and recovery waterfall |
+| covenant-review | `/covenants` | Covenants, headroom, baskets, and lender-protection gaps |
+| credit-memo | `/credit-memo` | Credit committee or investment memo |
 
 </details>
 
