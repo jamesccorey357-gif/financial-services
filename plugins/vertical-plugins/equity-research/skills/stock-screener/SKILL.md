@@ -26,6 +26,7 @@ python3 screener.py --template <quality|garp|value|dividend|speculative|all> [--
 - It pauses 0.4s per ticker, so ~100 tickers takes about a minute. Run large universes in the background.
 - If `yfinance` / `pandas` are missing, point the user to `pip install -r requirements.txt` rather than installing silently.
 - Report any tickers the script printed as "skipped".
+- After a run, archive it with the `screen-backtest` skill's `snapshot` step. The next run overwrites these files, and an un-archived run can't be tracked later.
 
 ## Step 3: Read the results
 
@@ -76,6 +77,7 @@ Offer next steps on the shortlist using the existing skills:
 - `dcf-model` — a full DCF to replace the screener's mechanical one
 - `position-sizing` — turn the shortlist into sized, whole-share orders for the user's portfolio
 - `portfolio-risk` — check what the user already holds before adding to it
+- `screen-backtest` — how each screen's past picks performed after the run
 
 ## Answering "why did X pass/fail?"
 

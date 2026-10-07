@@ -215,6 +215,7 @@ These are reference templates — they get better when you tune them to how your
 | stock-screener | `/screener` | Run a local `screener.py` and shortlist the passers |
 | position-sizing | `/position-size` | Size a shortlist into whole-share orders within name, sector, and cash caps |
 | portfolio-risk | `/portfolio-risk` | Concentration, sector, vol, beta, VaR, drawdown, and stress on your holdings |
+| screen-backtest | `/screen-backtest` | Archive screener runs and track forward returns of each screen's picks |
 
 </details>
 
