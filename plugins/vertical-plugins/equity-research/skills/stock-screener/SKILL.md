@@ -74,6 +74,8 @@ Offer next steps on the shortlist using the existing skills:
 - `catalyst-calendar` — upcoming events across the shortlist
 - `thesis-tracker` — start a thesis for names the user wants to track
 - `dcf-model` — a full DCF to replace the screener's mechanical one
+- `position-sizing` — turn the shortlist into sized, whole-share orders for the user's portfolio
+- `portfolio-risk` — check what the user already holds before adding to it
 
 ## Answering "why did X pass/fail?"
 

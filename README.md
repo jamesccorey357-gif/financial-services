@@ -213,6 +213,8 @@ These are reference templates — they get better when you tune them to how your
 | catalyst-calendar | `/catalysts` | Track upcoming catalysts across coverage |
 | idea-generation | `/screen` | Stock screening and idea sourcing |
 | stock-screener | `/screener` | Run a local `screener.py` and shortlist the passers |
+| position-sizing | `/position-size` | Size a shortlist into whole-share orders within name, sector, and cash caps |
+| portfolio-risk | `/portfolio-risk` | Concentration, sector, vol, beta, VaR, drawdown, and stress on your holdings |
 
 </details>
 
