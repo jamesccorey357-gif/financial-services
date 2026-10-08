@@ -1,0 +1,26 @@
+name: Bug report
+description: A skill, command, agent, or script is not behaving as expected
+labels: [bug]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: Plugin, skill, command, agent, or script name
+      placeholder: "e.g. equity-research / earnings-reviewer / deploy-managed-agent.sh"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened vs. what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps or prompt to reproduce
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version / Claude Code version
