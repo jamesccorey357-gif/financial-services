@@ -37,7 +37,10 @@ Each `results_<template>.csv` has one row per ticker, passers first. Key columns
 | `passed` | No check failed and at most one check had missing data |
 | `score` | % of known checks passed (screen + basic filters + red flags) |
 | `failed_checks` / `missing_checks` | `;`-separated check names |
-| `intrinsic_value`, `margin_of_safety` | 5-year FCF DCF: growth = revenue CAGR capped at 15%, 9% discount, 3% terminal |
+| `intrinsic_value`, `margin_of_safety` | 5-year DCF on FCF **after stock-based comp**: growth starts at revenue CAGR (capped at 15%) and fades linearly to 3% terminal, 9% discount |
+| `intrinsic_value_low` / `_high` | Same DCF at 10% / 8% discount, a sensitivity range |
+| `dcf_note` | Why there's no DCF: `n/a for banks/insurers`, `FCF after SBC <= 0`, or `no FCF data` |
+| `sbc_pct_of_fcf` | Stock comp as a share of FCF; high values mean reported FCF overstates owner cash |
 | `buy_zone` | Margin of safety ≥ 25% |
 
 What each screen checks (the script is the source of truth if these differ):
@@ -62,6 +65,8 @@ For each screen run, present:
    - A passer with a missing check passed on incomplete data.
    - Value-screen sector medians come only from tickers in this run; a small or single-sector universe makes them unreliable.
    - The DCF is mechanical — a high margin of safety on a cyclical, a turnaround, or a company with lumpy FCF needs checking, not trusting.
+   - Results from runs before the SBC-adjusted DCF lack `intrinsic_value_low`/`_high`; their intrinsic values run higher for stock-comp-heavy names. Re-run before comparing.
+   - Users can also run the screens from the Northstar desktop app (Screener page), which archives each run to `screen_history/` automatically.
    - Data is Yahoo Finance and can be stale or wrong; spot-check anything that looks extreme.
 
 Keep it to what the CSV says. Do not add price targets or buy/sell calls.
