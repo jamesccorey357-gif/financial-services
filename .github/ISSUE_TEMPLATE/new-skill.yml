@@ -1,0 +1,38 @@
+name: New skill or agent request
+description: Propose a new skill, command, or named agent
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where would it live?
+      options:
+        - credit
+        - equity-research
+        - financial-analysis
+        - fund-admin
+        - investment-banking
+        - operations
+        - private-equity
+        - wealth-management
+        - New named agent (agent-plugins + managed-agent cookbook)
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow
+      description: What task should it do, and who does that task today?
+    validations:
+      required: true
+  - type: textarea
+    id: inputs-outputs
+    attributes:
+      label: Inputs and outputs
+      description: What data goes in (filings, models, MCP sources) and what comes out (memo, spreadsheet, deck)?
+  - type: textarea
+    id: example
+    attributes:
+      label: Example prompt
+      placeholder: "e.g. Build a comps table for MSFT against its cloud peers"

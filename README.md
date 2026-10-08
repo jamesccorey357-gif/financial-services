@@ -108,9 +108,10 @@ Start with **financial-analysis** — it carries the shared modeling skills and 
 | **[investment-banking](./plugins/vertical-plugins/investment-banking)** | CIMs, teasers, process letters, buyer lists, merger models, deal tracking. |
 | **[equity-research](./plugins/vertical-plugins/equity-research)** | Earnings notes, initiations, model updates, thesis and catalyst tracking. |
 | **[private-equity](./plugins/vertical-plugins/private-equity)** | Sourcing, screening, diligence checklists, IC memos, portfolio monitoring. |
+| **[credit](./plugins/vertical-plugins/credit)** | Issuer credit analysis, capital structure and recovery, covenant review, credit memos. |
 | **[fund-admin](./plugins/vertical-plugins/fund-admin)** | GL recon, break tracing, accruals, roll-forwards, variance commentary, NAV tie-out. |
 | **[operations](./plugins/vertical-plugins/operations)** | KYC document parsing and rules-grid evaluation. |
-| **[claude-for-financial-advisors](./claude-for-financial-advisors)** | Advisor workflows: meeting prep and follow-up, compliance pre-check, prospect intake, rebalance review, alts and estate briefs, on live data from the advisor's CRM, portfolio, planning, and estate platforms. |
+| **[wealth-management](./plugins/vertical-plugins/wealth-management)** | Client reviews, financial plans, rebalancing, reporting, TLH. |
 | **[lseg](./plugins/partner-built/lseg)** *(partner)* | Bond RV, swap curves, FX carry, options vol, macro-rates monitoring on LSEG data. |
 | **[sp-global](./plugins/partner-built/spglobal)** *(partner)* | Tear sheets, earnings previews, funding digests on S&P Capital IQ. |
 
@@ -212,6 +213,10 @@ These are reference templates — they get better when you tune them to how your
 | thesis-tracker | `/thesis` | Maintain and update investment theses |
 | catalyst-calendar | `/catalysts` | Track upcoming catalysts across coverage |
 | idea-generation | `/screen` | Stock screening and idea sourcing |
+| stock-screener | `/screener` | Run a local `screener.py` and shortlist the passers |
+| position-sizing | `/position-size` | Size a shortlist into whole-share orders within name, sector, and cash caps |
+| portfolio-risk | `/portfolio-risk` | Concentration, sector, vol, beta, VaR, drawdown, and stress on your holdings |
+| screen-backtest | `/screen-backtest` | Archive screener runs and track forward returns of each screen's picks |
 
 </details>
 
@@ -230,6 +235,56 @@ These are reference templates — they get better when you tune them to how your
 | portfolio-monitoring | `/portfolio` | Track portfolio company KPIs and variances |
 | value-creation-plan | `/value-creation` | Post-close 100-day plans and EBITDA bridges |
 | ai-readiness | `/ai-readiness` | Assess a portfolio company's AI readiness |
+
+</details>
+
+<details>
+<summary><b>credit</b> — corporate credit analysis</summary>
+
+| Skill | Command | Description |
+|---|---|---|
+| credit-analysis | `/credit` | Leverage, coverage, cash flow, liquidity, and financial-risk bands |
+| capital-structure | `/cap-structure` | Debt stack, maturity wall, and recovery waterfall |
+| covenant-review | `/covenants` | Covenants, headroom, baskets, and lender-protection gaps |
+| credit-memo | `/credit-memo` | Credit committee or investment memo |
+
+</details>
+
+<details>
+<summary><b>fund-admin</b> — reconciliation and month-end close</summary>
+
+| Skill | Command | Description |
+|---|---|---|
+| gl-recon | `/recon` | Reconcile GL to subledger and classify breaks |
+| break-trace | `/trace-break` | Trace a break to its originating entry |
+| accrual-schedule | `/accruals` | Period-end accrual schedule with draft JEs |
+| roll-forward | `/roll-forward` | Balance-sheet roll-forwards tied to GL |
+| variance-commentary | `/flux` | Flux commentary for lines over threshold |
+| nav-tieout | `/nav-tieout` | Tie an LP statement to the NAV pack |
+
+</details>
+
+<details>
+<summary><b>operations</b> — onboarding and KYC</summary>
+
+| Skill | Command | Description |
+|---|---|---|
+| kyc-doc-parse | `/kyc-parse` | Parse an onboarding packet into structured KYC fields |
+| kyc-rules | `/kyc-rules` | Risk-rate and route against the firm's rules grid |
+
+</details>
+
+<details>
+<summary><b>wealth-management</b> — advisor workflows</summary>
+
+| Skill | Command | Description |
+|---|---|---|
+| client-review | `/client-review` | Prep for client meetings with performance and talking points |
+| financial-plan | `/financial-plan` | Retirement, education, estate, and cash-flow projections |
+| portfolio-rebalance | `/rebalance` | Allocation drift analysis and tax-aware rebalancing |
+| client-report | `/client-report` | Client-facing performance reports |
+| investment-proposal | `/proposal` | Proposals for prospective clients |
+| tax-loss-harvesting | `/tlh` | Identify TLH opportunities and manage wash sales |
 
 </details>
 

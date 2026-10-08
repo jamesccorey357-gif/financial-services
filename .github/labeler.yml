@@ -1,0 +1,35 @@
+vertical-plugins:
+  - changed-files:
+      - any-glob-to-any-file: plugins/vertical-plugins/**
+
+agent-plugins:
+  - changed-files:
+      - any-glob-to-any-file: plugins/agent-plugins/**
+
+partner-built:
+  - changed-files:
+      - any-glob-to-any-file: plugins/partner-built/**
+
+managed-agents:
+  - changed-files:
+      - any-glob-to-any-file: managed-agent-cookbooks/**
+
+msft-365:
+  - changed-files:
+      - any-glob-to-any-file: claude-for-msft-365-install/**
+
+scripts:
+  - changed-files:
+      - any-glob-to-any-file: scripts/**
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file: [.github/**, .githooks/**]
+
+marketplace:
+  - changed-files:
+      - any-glob-to-any-file: .claude-plugin/**
+
+docs:
+  - changed-files:
+      - any-glob-to-any-file: ["*.md", "**/README.md"]
