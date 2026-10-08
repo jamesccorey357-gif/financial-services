@@ -2,7 +2,8 @@ name: claude
 
 # Mention @claude in an issue, PR comment, or PR review to have Claude Code
 # answer questions, review changes, or push fixes to the branch.
-# Requires the ANTHROPIC_API_KEY repository secret.
+# Requires the CLAUDE_CODE_OAUTH_TOKEN repository secret (from `claude setup-token`,
+# uses a Claude Pro/Max subscription instead of API billing).
 
 on:
   issue_comment:
@@ -39,7 +40,7 @@ jobs:
 
       - uses: anthropics/claude-code-action@v1
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           # CLAUDE.md is picked up automatically; let Claude run the repo checks.
           claude_args: |
             --allowedTools "Bash(python3 scripts/check.py),Bash(python3 scripts/sync-agent-skills.py),Bash(bash scripts/test-cookbooks.sh),Bash(pip install pyyaml)"
